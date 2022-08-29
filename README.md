@@ -1,1 +1,1 @@
-# UniversityOfLincoln--Precursor-to-Autonomous-Manipulation
+# UniversityOfLincoln Precursor-to-Autonomous-Manipulation
