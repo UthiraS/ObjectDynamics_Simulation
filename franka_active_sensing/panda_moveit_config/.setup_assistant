@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: franka_arm_gripper_realsense_gazebo_description
+    relative_path: model/panda_arm/panda_arm_gazebo_for_moveit_generation.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/panda_arm.srdf
+  CONFIG:
+    author_name: harit
+    author_email: haritpandya@gmail.com
+    generated_timestamp: 1539787273

@@ -1,0 +1,40 @@
+<launch>
+
+<env name="GAZEBO_MODEL_PATH" value="$(find franka_arm_gripper_realsense_gazebo_description)/model:$(find franka_arm_gripper_realsense_gazebo_description)/props_models:$(optenv GAZEBO_MODEL_PATH)" />
+
+    <!-- Launch Gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find franka_arm_gripper_realsense_gazebo_description)/worlds/sim_scenario#3.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="recording" value="false"/>
+        <arg name="debug" value="false"/>
+        <arg name="physics" value="ode" /> 
+    </include>
+
+    
+    
+    <!-- Generate/Load robot description file -->
+    <include file="$(find franka_arm_gripper_realsense_gazebo_description)/launch/description.launch"/>
+
+    <!-- Spawn urdf into Gazebo -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model arm" />
+    
+    <node pkg="rosbag" type="play" name="player" output="screen" args="play -l /media/harit/9538221364/task3.bag" /> 
+
+    
+    <!-- Start moveit node -->
+    <include file="$(find arm_control)/launch/moveit.launch"/>
+    
+    <!-- start rviz node -->
+    <include file="$(find arm_control)/launch/rviz.launch"/>
+   
+    <!-- run init object models script -->
+    <node pkg="franka_arm_gripper_realsense_gazebo_description" name="init_models" type="init_models.py" output="screen">
+        <!--param name="foo" value="foo" /-->
+    </node>
+    
+   
+        
+</launch>

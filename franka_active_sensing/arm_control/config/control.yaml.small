@@ -1,0 +1,20 @@
+# Publish all joint states
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
+
+# Control all joints
+arm_controller:
+  type: "arm_control/JointTrajectoryController"
+  joints:
+  - arm_joint1
+  - arm_joint2
+  - arm_joint3
+  
+  gains:
+    arm_joint1: {p: 100,  d: 10}
+    arm_joint2: {p: 100,  d: 10}
+    arm_joint3: {p: 100,  d: 10}
+    
+
+

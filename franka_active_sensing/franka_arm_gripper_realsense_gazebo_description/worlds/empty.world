@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <world name="empty">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>
+            <uri>model://sun</uri>
+        </include>
+		<!--include>	
+			<uri>model://workcell-assembly-v2-kinect</uri>
+			<name>workcell-assembly-v2-kinnect</name>
+			<pose>0 0 0 0 0 0</pose>
+        </include-->
+    </world>
+</sdf>

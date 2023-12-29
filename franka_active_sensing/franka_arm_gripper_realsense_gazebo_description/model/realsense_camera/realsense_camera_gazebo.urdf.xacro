@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="realsense_camera">
+  <xacro:include filename="$(find franka_arm_kinect_gazebo)/model/realsense_camera_gazebo.xacro"/>
+  <xacro:panda_gripper ns="realsense" xyz="0 0 0.1" />
+</robot>

@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<sdf version="1.6">
+<model name="fluorescent-strip">
+  <pose>0 0 0 0 0 0</pose>
+  <static>false</static>
+    <link name="link">
+		<!--pose>0.5 0 0 1.57 0 0</pose-->
+      <inertial>
+        <mass>0.3</mass>
+        <inertia> 
+          <ixx>0.0026667</ixx>       
+          <ixy>0.0</ixy>         
+          <ixz>0.0</ixz>         
+          <iyy>0.0026667</iyy>       
+          <iyz>0.0</iyz>         
+          <izz>0.0026667</izz>       
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://fluorescentstrip/fluorescentstrip.dae</uri>
+            <scale>0.2 0.2 0.2</scale>
+          </mesh>
+        </geometry>
+      <max_contacts>10</max_contacts>
+        <surface>
+			<contact>
+              <ode/>
+            </contact>
+            <bounce/>
+           <friction>
+              <ode>
+              <mu>0.3</mu>
+              <mu2>100</mu2>
+              </ode>
+           </friction>
+      </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://fluorescentstrip/fluorescentstrip.dae</uri>
+            <scale>0.2 0.2 0.2</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+    </link>
+  </model>
+</sdf>

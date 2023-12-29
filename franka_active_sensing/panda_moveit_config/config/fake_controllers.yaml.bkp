@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_panda_arm_controller
+    joints:
+      - panda_arm_joint1
+      - panda_arm_joint2
+      - panda_arm_joint3
+      - panda_arm_joint4
+      - panda_arm_joint5
+      - panda_arm_joint6
+      - panda_arm_joint7

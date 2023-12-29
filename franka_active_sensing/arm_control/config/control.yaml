@@ -1,0 +1,28 @@
+# Publish all joint states
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
+
+# Control all joints
+arm_controller:
+  type: "arm_control/JointTrajectoryController"
+  joints:
+  - panda_arm_joint1
+  - panda_arm_joint2
+  - panda_arm_joint3
+  - panda_arm_joint4
+  - panda_arm_joint5
+  - panda_arm_joint6
+  - panda_arm_joint7
+
+
+  gains:
+    panda_arm_joint1: {p: 1,  d: 0}
+    panda_arm_joint2: {p: 1,  d: 0}
+    panda_arm_joint3: {p: 1,  d: 0}
+    panda_arm_joint4: {p: 1,  d: 0}
+    panda_arm_joint5: {p: 1,  d: 0}
+    panda_arm_joint6: {p: 1,  d: 0}
+    panda_arm_joint7: {p: 1,  d: 0}
+
+arm_id: panda_arm_plus_own_gripper

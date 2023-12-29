@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+	<world name="default">
+	<scene>
+        <ambient>0.0 0.0 0.0 1.0</ambient>
+        <shadows>0</shadows>
+    </scene>	
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://open-cardboard-box</uri>
+      <pose>0.830397 0.666998 1.11561 0 0 0</pose>
+    </include>
+    <!--include>
+      <uri>model://bag</uri>
+      <pose>10 0.5 1.4 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://bolt</uri>
+      <pose>11 0.6 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://nut</uri>
+      <pose>12 0.7 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://RustPipe</uri>
+      <pose>13 0.5 1.1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Wrench</uri>
+      <pose>14 0.7 1.1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://needlenose</uri>
+      <pose>15 0.7 1.1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Box_Wrench</uri>
+      <pose>16 0.7 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://barrel</uri>
+      <pose>17 0.6 1.1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Bend_180</uri>
+      <pose>18 0.5 1.2 0 0 0</pose>
+    </include-->
+    <include>
+      <uri>model://Brick</uri>
+      <pose>19 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Concrete_Roadblock</uri>
+      <pose>20 0.5 1.2 0 0 0</pose>
+    </include>
+    <!--include>
+      <uri>model://Container_Gas</uri>
+      <pose>21 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Switch</uri>
+      <pose>22 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Gear</uri>
+      <pose>23 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Motor</uri>
+      <pose>24 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Plug</uri>
+      <pose>25 0.5 1.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Circuit_breaker</uri>
+      <pose>27 0.5 1.2 0 0 0</pose>
+    </include-->
+    <include>
+    	<uri>model://workcell-assembly-v2-kinect</uri>
+      <name>workcell-assembly-v2-kinnect</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

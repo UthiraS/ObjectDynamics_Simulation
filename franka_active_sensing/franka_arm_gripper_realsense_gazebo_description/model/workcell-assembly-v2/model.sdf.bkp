@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+
+<model name="workcell-assembly-v2">
+  <static>false</static>
+  
+  <!-- workcell-assembly-v2 -->
+  <link name="workcell-assembly-v2">
+    <pose>0 0 0.07 0 0 0</pose>
+    <inertial>
+      <mass>13.55</mass>
+      <inertia><ixx>0.294</ixx><iyy>0.294</iyy><izz>0.023</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/workcell-assembly-v2.stl</uri>
+          </mesh>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/workcell-assembly-v2.stl</uri>
+          </mesh>
+      </geometry>
+    </visual>
+  </link>
+  
+  
+  <!-- robot-base-fixation1 -->
+  <link name="robot-base-fixation1">
+    <pose>0.62 0.138 0.97 0 0 0</pose>			<!-- to move the arm-base edit the x-coordinate -->
+    <inertial>
+      <mass>1.84</mass>
+      <inertia><ixx>0.294</ixx><iyy>0.294</iyy><izz>0.023</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/robot-base-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/robot-base-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </visual>
+  </link>
+  
+  <!-- robot-base-fixation2 -->
+  <link name="robot-base-fixation2">
+    <pose>1.42 0.138 0.97 0 0 0</pose>			<!-- to move the arm-base edit the x-coordinate -->
+    <inertial>
+      <mass>1.84</mass>
+      <inertia><ixx>0.294</ixx><iyy>0.294</iyy><izz>0.023</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/robot-base-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/robot-base-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </visual>
+  </link>
+  
+  <!-- camera-movable-fixation1 -->
+  <link name="camera-movable-fixation1">
+    <pose>0.02 0.42 2.25 0 0 0</pose>			<!-- to move the camera edit the y-coordinate -->
+    <inertial>
+      <mass>1.84</mass>
+      <inertia><ixx>0.294</ixx><iyy>0.294</iyy><izz>0.023</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/camera-movable-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/camera-movable-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </visual>
+  </link>
+  
+  <!-- camera-movable-fixation2 -->
+  <link name="camera-movable-fixation2">
+    <pose>1.04 0.62 2.25 0 0 0</pose>			<!-- to move the camera edit the y-coordinate -->
+    <inertial>
+      <mass>1.84</mass>
+      <inertia><ixx>0.294</ixx><iyy>0.294</iyy><izz>0.023</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+    </inertial>
+    <collision name="collision">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/camera-movable-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <geometry>
+          <mesh>
+            <uri>model://workcell-assembly-v2/meshes/camera-movable-fixation.stl</uri>
+          </mesh>
+      </geometry>
+    </visual>
+  </link>
+  
+  
+  
+  
+  <!-- fix to ground -->
+  <joint name="fix-to-ground" type="fixed">
+    <pose>0 0 0 0 0 0</pose>
+    <parent>world</parent>
+    <child>workcell-assembly-v2</child>
+  </joint>
+  
+  <!-- fix robot-base-fixation1 to workcell -->
+  <joint name="fix-robot-base-fixation1" type="fixed">
+    <pose>0 0 0 0 0 0</pose>
+    <parent>workcell-assembly-v2</parent>
+    <child>robot-base-fixation1</child>
+  </joint>
+  
+  <!-- fix robot-base-fixation2 to workcell -->
+  <joint name="fix-robot-base-fixation2" type="fixed">
+    <pose>0 0 0 0 0 0</pose>
+    <parent>workcell-assembly-v2</parent>
+    <child>robot-base-fixation2</child>
+  </joint>
+  
+  <!-- fix camera-movable-fixation1 to workcell -->
+  <joint name="fix-camera-movable-fixation1" type="fixed">
+    <pose>0 0 0 0 0 0</pose>
+    <parent>workcell-assembly-v2</parent>
+    <child>camera-movable-fixation1</child>
+  </joint>
+  
+  <!-- fix camera-movable-fixation2 to workcell -->
+  <joint name="fix-camera-movable-fixation2" type="fixed">
+    <pose>0 0 0 0 0 0</pose>
+    <parent>workcell-assembly-v2</parent>
+    <child>camera-movable-fixation2</child>
+  </joint>
+  
+  
+  
+</model>
+</sdf>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+    
+	<!-- Load the URDF into the ROS Parameter Server -->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find franka_arm_gripper_realsense_gazebo_description)/model/franka_arm_gripper_realsense.xacro" />
+	
+	
+	
+	
+  
+</launch>

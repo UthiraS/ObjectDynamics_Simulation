@@ -1,0 +1,15 @@
+digraph G {
+"world" -> "panda_arm_link0"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 98.356 sec old)\nBuffer length: 0.000 sec\n"];
+"panda_arm_link7" -> "panda_arm_link8"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 98.356 sec old)\nBuffer length: 0.000 sec\n"];
+"panda_arm_link6" -> "panda_arm_link7"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link0" -> "panda_arm_link1"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link1" -> "panda_arm_link2"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link2" -> "panda_arm_link3"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link3" -> "panda_arm_link4"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link4" -> "panda_arm_link5"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+"panda_arm_link5" -> "panda_arm_link6"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.847 Hz\nMost recent transform: 98.340 ( 0.016 sec old)\nBuffer length: 1.180 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 98.356"[ shape=plaintext ] ;
+ }->"world";
+}
