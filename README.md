@@ -1,4 +1,4 @@
-# Precursor to Autonomous Manipulation
+# Object Dynamics Simulation and Sequence Prediction
 
 ## Objective
 The primary goal of this project is to understand the physics of a simulation environment in which a robot repeatedly builds and deconstructs a tower of blocks. The task involves using machine learning techniques to predict subsequent sequences of block positions and orientations after each manipulation action. The focus is on training a robot to interact intelligently with objects in its environment, pushing the boundaries of robot manipulation.
@@ -129,8 +129,8 @@ A video showing the Franka Emika Panda executing a pushing task, exploring activ
 
 This video highlights the UR5 robot demonstrating manipulation techniques with task-based objectives.
 
-[![UR5 Manipulation](path_to_thumbnail_image)](link_to_UR5.mp4)  
-*Click to watch the video.*
+[![UR5 Manipulation](link_to_UR5.mp4)  
+
 
 ---
 
@@ -138,8 +138,8 @@ This video highlights the UR5 robot demonstrating manipulation techniques with t
 
 A push-based manipulation demo where the robot performs a series of movements to adjust objects in its environment.
 
-[![Push Demo](path_to_thumbnail_image)](link_to_push_demo.mp4)  
-*Click to watch the video.*
+[![Push Demo]](link_to_push_demo.mp4)  
+
 
 ---
 
@@ -147,8 +147,8 @@ A push-based manipulation demo where the robot performs a series of movements to
 
 Exploration of active sensing capabilities integrated into the Franka Emika Panda system.
 
-[![Active Sensing](path_to_thumbnail_image)](link_to_franka_active_sensing.mp4)  
-*Click to watch the video.*
+[![Active Sensing]](link_to_franka_active_sensing.mp4)  
+
 
 ---
 
@@ -156,8 +156,8 @@ Exploration of active sensing capabilities integrated into the Franka Emika Pand
 
 This video demonstrates an autonomous tower-building task, showcasing the precision and adaptive control of the robotic system.
 
-[![Tower Building](path_to_thumbnail_image)](link_to_tower_videos.mp4)  
-*Click to watch the video.*
+[![Tower Building](link_to_tower_videos.mp4)  
+
 
 ---
 
