@@ -1,4 +1,4 @@
-# University of Lincoln - Precursor to Autonomous Manipulation
+# Precursor to Autonomous Manipulation
 
 ## Objective
 The primary goal of this project is to understand the physics of a simulation environment in which a robot repeatedly builds and deconstructs a tower of blocks. The task involves using machine learning techniques to predict subsequent sequences of block positions and orientations after each manipulation action. The focus is on training a robot to interact intelligently with objects in its environment, pushing the boundaries of robot manipulation.
