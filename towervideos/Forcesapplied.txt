@@ -1,4 +1,0 @@
-Force 
-1. avi  (@box1)x:0,y:1,z:1 total 1.414 Newtons
-2. avi  (@box)x:5,y:0,z:2 total 5.385 Newtons
-3.avi   (@box2)x:1,y:2:z:0 total 2.236 Newtons
