@@ -110,6 +110,8 @@ Here’s your project structure in a similar markdown format with descriptions:
 ## 1. Franka Grasping
 
 Demonstration of the Franka Emika Panda robot performing a grasping task using autonomous manipulation strategies.
+
+
 [Franka_Grasping .webm](https://github.com/user-attachments/assets/b43d400d-1871-4ab6-a86f-4f4920ea78fd)
 
 
@@ -120,6 +122,8 @@ Demonstration of the Franka Emika Panda robot performing a grasping task using a
 ## 2. Franka Pushing demo 
 
 A video showing the Franka Emika Panda executing a pushing task, exploring active sensing and feedback-driven manipulation.
+
+
 [Franka_pushing_1.webm](https://github.com/user-attachments/assets/85d32925-45ea-4656-821f-a61857846f0d)
 
 
@@ -144,8 +148,13 @@ A push-based manipulation demo where the robot performs a series of movements to
 This video demonstrates an autonomous tower-building task, showcasing the precision and adaptive control of the robotic system.
 
 
+
 [1.webm](https://github.com/user-attachments/assets/532ebbc5-ea6b-452c-901e-65a60a44abd6)
+
+
 [2.webm](https://github.com/user-attachments/assets/9556fb91-391e-4762-9899-ff5f58c94063)
+
+
 [3.webm](https://github.com/user-attachments/assets/9ef28f7d-04c2-4b33-be88-16fda81d9c3b)
 
 
