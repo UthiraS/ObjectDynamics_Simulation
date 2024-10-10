@@ -6,7 +6,7 @@ This project explores autonomous manipulation techniques using robotic systems s
 
 Demonstration of the Franka Emika Panda robot performing a grasping task using autonomous manipulation strategies.
 
-[![Franka Grasping](path_to_thumbnail_image)](link_to_Frank_Grasping.mp4)  
+[![Franka Grasping](path_to_thumbnail_image)](https://github.com/UthiraS/Precursor-to-Autonomous-Manipulation/blob/main/Franka_Grasping%20.mp4))  
 *Click to watch the video.*
 
 ---
