@@ -49,67 +49,50 @@ This project uses simulation environments such as **V-REP**, **Gazebo**, and rea
 ---
 
 ## Project File Structure
-
 Precursor-to-Autonomous-Manipulation/
-├── VREP FILES/
+├── VREP FILES/                  # VREP simulation files for Franka Emika Panda
 │   └── vrep-Franka/
-├── Panda/meshes/
-├── objects/
-├── simulation/
+├── Panda/meshes/                # Mesh files for Panda robot models
+├── objects/                     # Objects used in the simulation
+├── simulation/                  # Simulation-related files
 │   └── test-cases/
-│       ├── Franka-Panda.ttt
-│       ├── _init_.py
-│       ├── _init_.pyc
-│       ├── remoteApi.so
-│       ├── simulation.ttt
-│       ├── vrep.py
-│       ├── vrep.pyc
-│       ├── vrepConst.py
-│       ├── vrepConst.pyc
-│       ├── Franka-Panda.ttt
-│       ├── demo.py
-│       ├── franka_emika.ttm
-│       ├── panda.urdf
-│       ├── transformations.py
-│       ├── transformations.pyc
-│       ├── utils.py
-│       └── utils.pyc
-├── vrep-URS/
+│       ├── Franka-Panda.ttt      # VREP scene file for Panda robot
+│       ├── _init_.py             # Python initialization file
+│       ├── remoteApi.so          # VREP Remote API library
+│       ├── simulation.ttt        # Main simulation scene file
+│       ├── vrep.py               # VREP Python bindings
+│       ├── franka_emika.ttm      # Franka robot model file
+│       ├── panda.urdf            # URDF model of Panda robot
+│       ├── transformations.py    # Helper functions for transformations
+│       ├── demo.py               # Demo script for running simulations
+│       ├── utils.py              # Utility functions for simulation
+├── vrep-URS/                    # VREP simulation files for UR5 robot
 │   ├── objects/
 │   └── simulation/
-│       ├── demo.py
-│       ├── tower.py
-│       ├── transformations.py
-│       ├── ur5.py
-│       ├── utils.py
-│       └── utils.pyc
-├── vrep/
-│   └── Franka_Grasping.ttt
-├── franka_active_sensing/
-│   ├── arm_control/
+│       ├── demo.py               # Demo script for UR5 robot
+│       ├── tower.py              # Tower building script for UR5
+│       ├── ur5.py                # UR5-specific control script
+│       ├── transformations.py    # Helper functions for transformations
+│       ├── utils.py              # Utility functions for simulation
+├── vrep/                        # Additional VREP simulation files
+│   └── Franka_Grasping.ttt       # Scene for Franka grasping task
+├── franka_active_sensing/       # Active sensing and control for Franka robot
+│   ├── arm_control/              # Arm control scripts for Franka
 │   ├── franka_arm_gripper_realsense_gazebo/
-│   ├── launch/
-│   ├── model/
-│   ├── props_models/
-│   ├── scripts/
+│   ├── scripts/                  # Sensing scripts for depth and image data
 │   │   ├── interim/
 │   │   └── results/
-│   │       ├── demo_compressed_img_subscriber.py
-│   │       ├── demo_depth_subscriber.py
-│   │       ├── demo_depth_subscriber_non_blocking.py
-│   │       ├── demo_image_subscriber.py
-│   │       ├── demo_image_subscriber.pyc
-│   │       ├── depth_subscriber_segmentator.py
-│   │       ├── depth_subscriber_segmentator_non_blocking.py
-│   │       ├── get_gt_pcl.py
-│   │       ├── init_models.py
-│   │       └── pause_gazebo.py
-│   ├── worlds/
-│   ├── CMakeLists.txt
-│   ├── package.xml
-│   └── ros_gazebo_moveit_setup.odt
-├── towervideos/
-└── Certificates.pdf
+│   │       ├── demo_compressed_img_subscriber.py # Image data collection
+│   │       ├── demo_depth_subscriber.py          # Depth data collection
+│   │       ├── get_gt_pcl.py                     # Point cloud generation
+│   ├── worlds/                    # Gazebo world files for simulations
+│   ├── CMakeLists.txt             # Build configuration file
+│   ├── package.xml                # ROS package metadata
+├── towervideos/                 # Videos of tower building/deconstruction
+└── Certificates.pdf             # Certificates related to the project
+
+
+
 ## 1. Franka Grasping
 
 Demonstration of the Franka Emika Panda robot performing a grasping task using autonomous manipulation strategies.
