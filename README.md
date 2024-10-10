@@ -49,48 +49,62 @@ This project uses simulation environments such as **V-REP**, **Gazebo**, and rea
 ---
 
 ## Project File Structure
-Precursor-to-Autonomous-Manipulation/
-├── VREP FILES/                  # VREP simulation files for Franka Emika Panda
-│   └── vrep-Franka/
-├── Panda/meshes/                # Mesh files for Panda robot models
-├── objects/                     # Objects used in the simulation
-├── simulation/                  # Simulation-related files
-│   └── test-cases/
-│       ├── Franka-Panda.ttt      # VREP scene file for Panda robot
-│       ├── _init_.py             # Python initialization file
-│       ├── remoteApi.so          # VREP Remote API library
-│       ├── simulation.ttt        # Main simulation scene file
-│       ├── vrep.py               # VREP Python bindings
-│       ├── franka_emika.ttm      # Franka robot model file
-│       ├── panda.urdf            # URDF model of Panda robot
-│       ├── transformations.py    # Helper functions for transformations
-│       ├── demo.py               # Demo script for running simulations
-│       ├── utils.py              # Utility functions for simulation
-├── vrep-URS/                    # VREP simulation files for UR5 robot
-│   ├── objects/
-│   └── simulation/
-│       ├── demo.py               # Demo script for UR5 robot
-│       ├── tower.py              # Tower building script for UR5
-│       ├── ur5.py                # UR5-specific control script
-│       ├── transformations.py    # Helper functions for transformations
-│       ├── utils.py              # Utility functions for simulation
-├── vrep/                        # Additional VREP simulation files
-│   └── Franka_Grasping.ttt       # Scene for Franka grasping task
-├── franka_active_sensing/       # Active sensing and control for Franka robot
-│   ├── arm_control/              # Arm control scripts for Franka
-│   ├── franka_arm_gripper_realsense_gazebo/
-│   ├── scripts/                  # Sensing scripts for depth and image data
-│   │   ├── interim/
-│   │   └── results/
-│   │       ├── demo_compressed_img_subscriber.py # Image data collection
-│   │       ├── demo_depth_subscriber.py          # Depth data collection
-│   │       ├── get_gt_pcl.py                     # Point cloud generation
-│   ├── worlds/                    # Gazebo world files for simulations
-│   ├── CMakeLists.txt             # Build configuration file
-│   ├── package.xml                # ROS package metadata
-├── towervideos/                 # Videos of tower building/deconstruction
-└── Certificates.pdf             # Certificates related to the project
+Here’s your project structure in a similar markdown format with descriptions:
 
+---
+
+## Project File Structure
+
+- **VREP FILES/**: VREP simulation files for the Franka Emika Panda.
+  - **vrep-Franka/**: Contains VREP models and configuration specific to the Panda robot.
+  
+- **Panda/meshes/**: Mesh files for the Panda robot models.
+
+- **objects/**: Various objects used in the simulation scenarios.
+
+- **simulation/**: Files related to setting up and running simulations.
+  - **test-cases/**: Specific simulation test cases.
+    - **Franka-Panda.ttt**: VREP scene file for the Panda robot.
+    - **_init_.py**: Python initialization file for the test cases.
+    - **remoteApi.so**: VREP Remote API library for Python.
+    - **simulation.ttt**: Main simulation scene file.
+    - **vrep.py**: Python bindings for VREP.
+    - **franka_emika.ttm**: Franka robot model file for VREP.
+    - **panda.urdf**: URDF model file for the Panda robot.
+    - **transformations.py**: Utility functions for transformations.
+    - **demo.py**: Demonstration script to run simulations.
+    - **utils.py**: Additional utility functions for simulation setup.
+  
+- **vrep-URS/**: VREP simulation files for the UR5 robot.
+  - **objects/**: Objects used in UR5 robot simulations.
+  - **simulation/**: Files for running UR5 robot simulations.
+    - **demo.py**: Demo script to run simulations for the UR5 robot.
+    - **tower.py**: Script for simulating tower-building tasks with UR5.
+    - **ur5.py**: Control script specific to the UR5 robot.
+    - **transformations.py**: Helper functions for transformations.
+    - **utils.py**: Utility functions for UR5 simulations.
+  
+- **vrep/**: Additional VREP simulation files.
+  - **Franka_Grasping.ttt**: VREP scene file for Franka robot grasping tasks.
+
+- **franka_active_sensing/**: Files related to active sensing and control for the Franka robot.
+  - **arm_control/**: Control scripts for the Franka robot's arm.
+  - **franka_arm_gripper_realsense_gazebo/**: Integration of Franka with a gripper and RealSense in Gazebo.
+  - **scripts/**: Sensing-related scripts for handling image and depth data.
+    - **interim/**: Temporary scripts for intermediate processing.
+    - **results/**: Scripts for final data processing.
+      - **demo_compressed_img_subscriber.py**: Script for collecting compressed image data.
+      - **demo_depth_subscriber.py**: Script for collecting depth data.
+      - **get_gt_pcl.py**: Script for generating point cloud data.
+  - **worlds/**: Gazebo world files used in simulations.
+  - **CMakeLists.txt**: Configuration file for building the ROS packages.
+  - **package.xml**: ROS package metadata.
+
+- **towervideos/**: Videos documenting tower building and deconstruction simulations.
+
+- **Certificates.pdf**: Project-related certificates and documentation.
+
+---
 
 
 ## 1. Franka Grasping
@@ -106,8 +120,8 @@ Demonstration of the Franka Emika Panda robot performing a grasping task using a
 
 A video showing the Franka Emika Panda executing a pushing task, exploring active sensing and feedback-driven manipulation.
 
-[![Franka Pushing](path_to_thumbnail_image)](link_to_Franka_pushing.mp4)  
-*Click to watch the video.*
+[![Franka Pushing](link_to_Franka_pushing.mp4)  
+
 
 ---
 
